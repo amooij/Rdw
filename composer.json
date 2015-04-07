@@ -1,0 +1,22 @@
+{
+  "name": "nettob/rdw",
+  "type": "component",
+  "description": "This component provides classes to retrieve data from the RDW",
+  "keywords": ["component", "rdw"],
+  "homepage": "https://github.com/nettob/Rdw",
+  "license": "cc0",
+  "authors": [
+    {
+      "name": "Nico Borghuis",
+      "email": "nico@nicoborghuis.nl"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.2",
+    "guzzle/guzzle": "3.*"
+  },
+  "autoload": {
+    "psr-0": { "Nettob\\Component\\Rdw": "" }
+  },
+  "target-dir": "Nettob/Component/Rdw"
+}
