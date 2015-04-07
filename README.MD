@@ -59,3 +59,8 @@ $limit = 100; # Limit of number plates.
 $offset = 100; # offset of number plates.
 $kentekenRepository->findBy($key, $vale, $type, $limit, $offset);
 ```
+
+## Api
+
+The data set is avalible on the azure marktplace named [Voertuig Open Data] (https://datamarket.azure.com/dataset/opendata.rdw/vrtg.open.data)
+Request access to the data set and retrieve your api key from [your account] (https://datamarket.azure.com/account)
