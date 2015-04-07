@@ -11,7 +11,6 @@ namespace Nettob\Component\Rdw\Model;
 
 use Guzzle\Http\Client;
 use Guzzle\Http\Exception\RequestException;
-use Guzzle\Stream\Stream;
 use Nettob\Component\Rdw\Model\Kenteken;
 
 /**
@@ -197,3 +196,4 @@ class KentekenRepository
         return $kentekens;
     }
 }
+

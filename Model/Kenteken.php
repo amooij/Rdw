@@ -230,7 +230,7 @@ class Kenteken
      * @return string|null
      */
     private function formatSetDate($date) {
-        if(is_null($date) OR empty($date)){
+        if(is_null($date) || empty($date)){
             return null;
         }
         if( substr($date, 0, 6) == '/Date(' ) {
@@ -259,7 +259,7 @@ class Kenteken
      */
     public function setAantalcilinders($Aantalcilinders)
     {
-        if(!is_null($Aantalcilinders) OR !empty($Aantalcilinders)) {
+        if(!is_null($Aantalcilinders) || !empty($Aantalcilinders)) {
             $this->Aantalcilinders = intval($Aantalcilinders);
         }
     }
@@ -277,7 +277,7 @@ class Kenteken
      */
     public function setAantalstaanplaatsen($Aantalstaanplaatsen)
     {
-        if(!is_null($Aantalstaanplaatsen) OR !empty($Aantalstaanplaatsen)) {
+        if(!is_null($Aantalstaanplaatsen) || !empty($Aantalstaanplaatsen)) {
             $this->Aantalstaanplaatsen = intval($Aantalstaanplaatsen);
         }
     }
@@ -295,7 +295,7 @@ class Kenteken
      */
     public function setAantalzitplaatsen($Aantalzitplaatsen)
     {
-        if(!is_null($Aantalzitplaatsen) OR !empty($Aantalzitplaatsen)) {
+        if(!is_null($Aantalzitplaatsen) || !empty($Aantalzitplaatsen)) {
             $this->Aantalzitplaatsen = intval($Aantalzitplaatsen);
         }
     }
@@ -313,7 +313,7 @@ class Kenteken
      */
     public function setBPM($BPM)
     {
-        if(!is_null($BPM) OR !empty($BPM)) {
+        if(!is_null($BPM) || !empty($BPM)) {
             $this->BPM = intval($BPM);
         }
 
@@ -332,7 +332,7 @@ class Kenteken
      */
     public function setBrandstofverbruikbuitenweg($Brandstofverbruikbuitenweg)
     {
-        if(!is_null($Brandstofverbruikbuitenweg) OR !empty($Brandstofverbruikbuitenweg)) {
+        if(!is_null($Brandstofverbruikbuitenweg) || !empty($Brandstofverbruikbuitenweg)) {
             $this->Brandstofverbruikbuitenweg = floatval($Brandstofverbruikbuitenweg);
         }
     }
@@ -350,7 +350,7 @@ class Kenteken
      */
     public function setBrandstofverbruikgecombineerd($Brandstofverbruikgecombineerd)
     {
-        if(!is_null($Brandstofverbruikgecombineerd) OR !empty($Brandstofverbruikgecombineerd)) {
+        if(!is_null($Brandstofverbruikgecombineerd) || !empty($Brandstofverbruikgecombineerd)) {
             $this->Brandstofverbruikgecombineerd = floatval($Brandstofverbruikgecombineerd);
         }
     }
@@ -368,7 +368,7 @@ class Kenteken
      */
     public function setBrandstofverbruikstad($Brandstofverbruikstad)
     {
-        if(!is_null($Brandstofverbruikstad) OR !empty($Brandstofverbruikstad)) {
+        if(!is_null($Brandstofverbruikstad) || !empty($Brandstofverbruikstad)) {
             $this->Brandstofverbruikstad = floatval($Brandstofverbruikstad);
         }
     }
@@ -386,7 +386,7 @@ class Kenteken
      */
     public function setCatalogusprijs($Catalogusprijs)
     {
-        if(!is_null($Catalogusprijs) OR !empty($Catalogusprijs)) {
+        if(!is_null($Catalogusprijs) || !empty($Catalogusprijs)) {
             $this->Catalogusprijs = intval($Catalogusprijs);
         }
     }
@@ -404,7 +404,7 @@ class Kenteken
      */
     public function setCilinderinhoud($Cilinderinhoud)
     {
-        if(!is_null($Cilinderinhoud) OR !empty($Cilinderinhoud)) {
+        if(!is_null($Cilinderinhoud) || !empty($Cilinderinhoud)) {
             $this->Cilinderinhoud = intval($Cilinderinhoud);
         }
     }
@@ -422,7 +422,7 @@ class Kenteken
      */
     public function setCO2uitstootgecombineerd($CO2uitstootgecombineerd)
     {
-        if(!is_null($CO2uitstootgecombineerd) OR !empty($CO2uitstootgecombineerd)) {
+        if(!is_null($CO2uitstootgecombineerd) || !empty($CO2uitstootgecombineerd)) {
             $this->CO2uitstootgecombineerd = intval($CO2uitstootgecombineerd);
         }
     }
@@ -587,7 +587,7 @@ class Kenteken
      */
     public function setLaadvermogen($Laadvermogen)
     {
-        if(!is_null($Laadvermogen) OR !empty($Laadvermogen)) {
+        if(!is_null($Laadvermogen) || !empty($Laadvermogen)) {
             $this->Laadvermogen = intval($Laadvermogen);
         }
     }
@@ -605,7 +605,7 @@ class Kenteken
      */
     public function setMassaleegvoertuig($Massaleegvoertuig)
     {
-        if(!is_null($Massaleegvoertuig) OR !empty($Massaleegvoertuig)) {
+        if(!is_null($Massaleegvoertuig) || !empty($Massaleegvoertuig)) {
             $this->Massaleegvoertuig = intval($Massaleegvoertuig);
         }
     }
@@ -623,7 +623,7 @@ class Kenteken
      */
     public function setMassarijklaar($Massarijklaar)
     {
-        if(!is_null($Massarijklaar) OR !empty($Massarijklaar)) {
+        if(!is_null($Massarijklaar) || !empty($Massarijklaar)) {
             $this->Massarijklaar = intval($Massarijklaar);
         }
     }
@@ -641,7 +641,7 @@ class Kenteken
      */
     public function setMaximaleconstructiesnelheid($Maximaleconstructiesnelheid)
     {
-        if(!is_null($Maximaleconstructiesnelheid) OR !empty($Maximaleconstructiesnelheid)) {
+        if(!is_null($Maximaleconstructiesnelheid) || !empty($Maximaleconstructiesnelheid)) {
             $this->Maximaleconstructiesnelheid = intval($Maximaleconstructiesnelheid);
         }
     }
@@ -659,7 +659,7 @@ class Kenteken
      */
     public function setMaximumtetrekkenmassaautonoomgeremd($Maximumtetrekkenmassaautonoomgeremd)
     {
-        if(!is_null($Maximumtetrekkenmassaautonoomgeremd) OR !empty($Maximumtetrekkenmassaautonoomgeremd)) {
+        if(!is_null($Maximumtetrekkenmassaautonoomgeremd) || !empty($Maximumtetrekkenmassaautonoomgeremd)) {
             $this->Maximumtetrekkenmassaautonoomgeremd = intval($Maximumtetrekkenmassaautonoomgeremd);
         }
     }
@@ -677,7 +677,7 @@ class Kenteken
      */
     public function setMaximumtetrekkenmassageremd($Maximumtetrekkenmassageremd)
     {
-        if(!is_null($Maximumtetrekkenmassageremd) OR !empty($Maximumtetrekkenmassageremd)) {
+        if(!is_null($Maximumtetrekkenmassageremd) || !empty($Maximumtetrekkenmassageremd)) {
             $this->Maximumtetrekkenmassageremd = intval($Maximumtetrekkenmassageremd);
         }
     }
@@ -695,7 +695,7 @@ class Kenteken
      */
     public function setMaximumtetrekkenmassamiddenasgeremd($Maximumtetrekkenmassamiddenasgeremd)
     {
-        if(!is_null($Maximumtetrekkenmassamiddenasgeremd) OR !empty($Maximumtetrekkenmassamiddenasgeremd)) {
+        if(!is_null($Maximumtetrekkenmassamiddenasgeremd) || !empty($Maximumtetrekkenmassamiddenasgeremd)) {
             $this->Maximumtetrekkenmassamiddenasgeremd = intval($Maximumtetrekkenmassamiddenasgeremd);
         }
     }
@@ -713,7 +713,7 @@ class Kenteken
      */
     public function setMaximumtetrekkenmassaongeremd($Maximumtetrekkenmassaongeremd)
     {
-        if(!is_null($Maximumtetrekkenmassaongeremd) OR !empty($Maximumtetrekkenmassaongeremd)) {
+        if(!is_null($Maximumtetrekkenmassaongeremd) || !empty($Maximumtetrekkenmassaongeremd)) {
             $this->Maximumtetrekkenmassaongeremd = intval($Maximumtetrekkenmassaongeremd);
         }
     }
@@ -731,7 +731,7 @@ class Kenteken
      */
     public function setMaximumtetrekkenmassaopleggergeremd($Maximumtetrekkenmassaopleggergeremd)
     {
-        if(!is_null($Maximumtetrekkenmassaopleggergeremd) OR !empty($Maximumtetrekkenmassaopleggergeremd)) {
+        if(!is_null($Maximumtetrekkenmassaopleggergeremd) || !empty($Maximumtetrekkenmassaopleggergeremd)) {
             $this->Maximumtetrekkenmassaopleggergeremd = intval($Maximumtetrekkenmassaopleggergeremd);
         }
     }
@@ -816,7 +816,7 @@ class Kenteken
      */
     public function setToegestanemaximummassavoertuig($Toegestanemaximummassavoertuig)
     {
-        if(!is_null($Toegestanemaximummassavoertuig) OR !empty($Toegestanemaximummassavoertuig)) {
+        if(!is_null($Toegestanemaximummassavoertuig) || !empty($Toegestanemaximummassavoertuig)) {
             $this->Toegestanemaximummassavoertuig = intval($Toegestanemaximummassavoertuig);
         }
     }
@@ -850,7 +850,7 @@ class Kenteken
      */
     public function setVermogen($Vermogen)
     {
-        if(!is_null($Vermogen) OR !empty($Vermogen)) {
+        if(!is_null($Vermogen) || !empty($Vermogen)) {
             $this->Vermogen = intval($Vermogen);
         }
     }
@@ -868,7 +868,7 @@ class Kenteken
      */
     public function setVermogenbromsnorfiets($Vermogenbromsnorfiets)
     {
-        if(!is_null($Vermogenbromsnorfiets) OR !empty($Vermogenbromsnorfiets)) {
+        if(!is_null($Vermogenbromsnorfiets) || !empty($Vermogenbromsnorfiets)) {
             $this->Vermogenbromsnorfiets = floatval($Vermogenbromsnorfiets);
         }
     }

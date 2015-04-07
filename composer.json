@@ -4,7 +4,7 @@
   "description": "This component provides classes to retrieve data from the RDW",
   "keywords": ["component", "rdw"],
   "homepage": "https://github.com/nettob/Rdw",
-  "license": "cc0",
+  "license": "proprietary",
   "authors": [
     {
       "name": "Nico Borghuis",
