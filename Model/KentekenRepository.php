@@ -53,7 +53,7 @@ class KentekenRepository
     /**
      * @var string
      */
-    private $apiUrl = "https://api.datamarket.azure.com/opendata.rdw/VRTG.Open.Data/v1/KENT_VRTG_O_DAT";
+    private $apiUrl = 'https://api.datamarket.azure.com/opendata.rdw/VRTG.Open.Data/v1/KENT_VRTG_O_DAT';
 
     /**
      * @var string
@@ -137,11 +137,11 @@ class KentekenRepository
     public function findBy($key, $value, $type = self::TYPE_EQ, $limit = 100, $offset = 0)
     {
         if (!in_array($type, $this->getTypes())) {
-            throw new \Exception("Type not found");
+            throw new \Exception('Type not found');
         }
 
-        if (!method_exists("Nettob\\Component\\Rdw\\Model\\Kenteken", "get".ucfirst($key))) {
-            throw new \Exception("Key not found");
+        if (!method_exists('Nettob\\Component\\Rdw\\Model\\Kenteken', 'get'.ucfirst($key))) {
+            throw new \Exception('Key not found');
         }
         $url = $this->apiUrl.'?$format='.$this->contentType.'&$top='.$limit.'&$skip='.$offset.'&$filter='.$key.' '.$type.' \''.$value.'\'';
 
@@ -179,8 +179,8 @@ class KentekenRepository
          foreach ($json['d']['results'] as $result) {
              $kenteken = new Kenteken();
              foreach ($result as $key => $value) {
-                 if (method_exists($kenteken, "set".ucfirst($key))) {
-                     call_user_func(array($kenteken, "set".ucfirst($key)), $value);
+                 if (method_exists($kenteken, 'set'.ucfirst($key))) {
+                     call_user_func(array($kenteken, 'set'.ucfirst($key)), $value);
                  }
              }
              $kentekens[] = $kenteken;
