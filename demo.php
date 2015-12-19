@@ -9,32 +9,35 @@ $carosserieRepository = new Nettob\Component\Rdw\Repository\CarrosserieRepositor
 $carosserieSpecifiekRepository = new Nettob\Component\Rdw\Repository\CarrosserieSpecifiekRepository();
 $voertuigklasseRepository = new Nettob\Component\Rdw\Repository\VoertuigklasseRepository();
 
-$kenteken = $kentekenRepository->findOneBy('kenteken', '53SRVX');
+
+$kentekenNummer = '';
+
+$kenteken = $kentekenRepository->findOneBy('kenteken', $kentekenNummer);
 echo '<pre>';
 var_dump($kenteken);
 echo '</pre>';
 
-$assen = $assenRepository->findOneBy('kenteken', '53SRVX');
+$assen = $assenRepository->findOneBy('kenteken', $kentekenNummer);
 echo '<pre>';
 var_dump($assen);
 echo '</pre>';
 
-$assen = $brandstofRepository->findOneBy('kenteken', '53SRVX');
+$assen = $brandstofRepository->findOneBy('kenteken', $kentekenNummer);
 echo '<pre>';
 var_dump($assen);
 echo '</pre>';
 
-$assen = $carosserieRepository->findOneBy('kenteken', '53SRVX');
+$assen = $carosserieRepository->findOneBy('kenteken', $kentekenNummer);
 echo '<pre>';
 var_dump($assen);
 echo '</pre>';
 
-$assen = $carosserieSpecifiekRepository->findOneBy('kenteken', '53SRVX');
+$assen = $carosserieSpecifiekRepository->findOneBy('kenteken', $kentekenNummer);
 echo '<pre>';
 var_dump($assen);
 echo '</pre>';
 
-$assen = $voertuigklasseRepository->findOneBy('kenteken', '53SRVX');
+$assen = $voertuigklasseRepository->findOneBy('kenteken', $kentekenNummer);
 echo '<pre>';
 var_dump($assen);
 echo '</pre>';
