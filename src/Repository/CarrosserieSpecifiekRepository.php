@@ -22,7 +22,7 @@ class CarrosserieSpecifiekRepository extends AbstractRepository
 {
     public function __construct()
     {
-        $this->apiUrl = 'https://opendata.rdw.nl/resource/vezc-m2t6.json';
+        $this->apiUrl = 'https://opendata.rdw.nl/resource/jhie-znh9.json';
         parent::__construct();
     }
 

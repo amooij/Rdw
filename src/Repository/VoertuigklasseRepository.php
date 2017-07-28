@@ -22,7 +22,7 @@ class VoertuigklasseRepository extends AbstractRepository
 {
     public function __construct()
     {
-        $this->apiUrl = 'https://opendata.rdw.nl/resource/jhie-znh9.json';
+        $this->apiUrl = 'https://opendata.rdw.nl/resource/kmfi-hrps.json';
         parent::__construct();
     }
 
