@@ -55,7 +55,7 @@ class Carrosserie
     public function __construct($result)
     {
         foreach ($result as $key => $value) {
-            if (property_exists('\Nettob\Component\Rdw\Model\Carroserie', $key)) {
+            if (property_exists('\Nettob\Component\Rdw\Model\Carrosserie', $key)) {
                 $this->$key = $value;
             }
         }
