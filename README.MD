@@ -11,7 +11,7 @@ Add the component to your `composer.json` file:
 ```javascript
 require: {
     // ...
-    "nettob/rdw": "3.*"
+    "amooij/rdw": "3.*"
     // ...
 }
 ```
@@ -21,7 +21,7 @@ Then run a composer update:
 ```shell
 composer.phar update
 # OR
-composer.phar update nettob/rdw # to only update the component
+composer.phar update amooij/rdw # to only update the component
 ```
 
 Usage
